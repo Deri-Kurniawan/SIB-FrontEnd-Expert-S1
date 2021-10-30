@@ -1,5 +1,7 @@
 import 'regenerator-runtime'; /* for async await transpile */
-import '../styles/main.css';
 import '@fortawesome/fontawesome-free/js/all';
+import '../styles/main.css';
+import main from '../scripts/view/main';
 
-console.log('Hello Coders! :)');
+
+document.addEventListener('DOMContentLoaded', main);
