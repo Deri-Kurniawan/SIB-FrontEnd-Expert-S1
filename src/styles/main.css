@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -13,7 +17,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background: #ff5C58;
+    background: #000;
     color: #fff;
 }
 
@@ -26,10 +30,12 @@ header {
     display: flex;
     width: 15em;
     justify-content: space-around;
+    flex-direction: row;
 }
 
 .nav-menu .menu-item {
     list-style-type: none;
+    display: block;
 }
 
 .nav-menu .menu-item a {
@@ -38,7 +44,7 @@ header {
 }
 
 .menu-item a:hover {
-    color: #ddd;
+    color: rgb(235, 235, 235);
 }
 
 .hero {
@@ -51,12 +57,9 @@ header {
     height: 20em;
     color: #fff;
     background: cover;
-    font-size: 2em;
+    font-size: 1.8em;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-.hero {
     text-align: center;
 }
 
@@ -69,20 +72,30 @@ header {
 }
 
 .card {
-    border: 1px solid black;
-}
-
-.card-body {
-    padding: 1.5em;
+    background: #ffffff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+    border-radius: 50px;
+    -o-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
 }
 
 .card img.card-image {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 16em;
+    height: 18em;
     background-position: center;
+    border-radius: 50px 50px 0 0;
+    -webkit-border-radius: 50px 50px 0 0;
+    -moz-border-radius: 50px 50px 0 0;
+    -ms-border-radius: 50px 50px 0 0;
+    -o-border-radius: 50px 50px 0 0;
+}
 
+.card-body {
+    padding: 1.5em;
 }
 
 .card-body span {
@@ -91,12 +104,12 @@ header {
 }
 
 .stars {
-    color: rgb(222, 222, 0);
+    color: gold;
 }
 
 .section-title {
     text-align: center;
-    margin: 1em;
+    margin: 2em 0;
 }
 
 footer {
@@ -104,6 +117,18 @@ footer {
     justify-content: center;
     align-items: center;
     height: 3em;
-    background: #ff5C58;
+    background: #000;
     color: #fff;
+}
+
+#menu-toggle {
+    visibility: hidden;
+    position: absolute;
+    top: 2px;
+    right: 4px;
+    padding: .5em;
+}
+
+.menu-open {
+    display: initial !important;
 }
