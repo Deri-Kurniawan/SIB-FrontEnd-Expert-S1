@@ -1,5 +1,9 @@
 @media only screen and (max-width: 550px) {
 
+    body {
+        overflow-x: hidden;
+    }
+
     header {
         display: flex;
         flex-direction: column;
@@ -16,7 +20,6 @@
         padding: 0;
         text-align: center;
         flex-direction: column;
-
     }
 
     .nav-menu .menu-item {

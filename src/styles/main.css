@@ -8,9 +8,19 @@ body {
     font-family: sans-serif;
 }
 
-h1 {
-    margin: 0;
-    padding: 0;
+.skip-link {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    background-color: #C55A1B;
+    color: white;
+    padding: 1.3em;
+    z-index: 100;
+    text-decoration: none;
+}
+
+.skip-link:focus {
+    top: 0;
 }
 
 header {
@@ -21,9 +31,17 @@ header {
     color: #fff;
 }
 
-.brand-logo a {
+.brand-logo {
     text-decoration: none;
     color: #fff;
+}
+
+#menu-toggle {
+    visibility: hidden;
+    position: absolute;
+    top: 18px;
+    right: 8px;
+    font-size: 2em;
 }
 
 .nav-menu {
@@ -44,7 +62,7 @@ header {
 }
 
 .menu-item a:hover {
-    color: rgb(235, 235, 235);
+    color: rgb(197, 197, 197);
 }
 
 .hero {
@@ -53,14 +71,21 @@ header {
     align-items: center;
     flex-direction: column;
     width: 100%;
-    margin: 0 auto;
+    margin: auto;
     height: 20em;
     color: #fff;
-    background: cover;
-    font-size: 1.8em;
+    background-size: contain;
     background-repeat: no-repeat;
-    background-size: cover;
+    font-size: 1.8em;
     text-align: center;
+}
+
+.hero-title {
+    margin: 0;
+}
+
+.hero-description {
+    margin: 1em 0;
 }
 
 .restaurant-list {
@@ -98,13 +123,17 @@ header {
     padding: 1.5em;
 }
 
-.card-body span {
-    display: block;
-    margin-bottom: 1em;
+.icons {
+    display: flex;
+    justify-content: space-between;
 }
 
-.stars {
+.rating-icon {
     color: gold;
+}
+
+.location-icon {
+    color: blue;
 }
 
 .section-title {
@@ -121,14 +150,13 @@ footer {
     color: #fff;
 }
 
-#menu-toggle {
-    visibility: hidden;
-    position: absolute;
-    top: 2px;
-    right: 4px;
-    padding: .5em;
-}
-
 .menu-open {
     display: initial !important;
+}
+
+.brand-logo,
+.hero,
+.section-title,
+footer {
+    cursor: default;
 }
