@@ -1,4 +1,4 @@
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 870px) {
 
     body {
         overflow-x: hidden;
@@ -16,7 +16,6 @@
 
     .nav-menu {
         display: none;
-        width: 15em;
         padding: 0;
         text-align: center;
         flex-direction: column;
@@ -32,7 +31,7 @@
     }
 }
 
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 870px) {
     .nav-menu {
         display: flex !important;
         flex-direction: row;
