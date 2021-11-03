@@ -40,9 +40,9 @@ header {
 #menu-toggle {
     visibility: hidden;
     position: absolute;
-    top: 30px;
+    top: 22px;
     right: 10px;
-    font-size: 2em;
+    font-size: 3em;
 }
 
 .nav-menu {
