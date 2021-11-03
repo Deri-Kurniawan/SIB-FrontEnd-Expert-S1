@@ -26,13 +26,13 @@ module.exports = {
         use: [
           { loader: 'style-loader' },
           { loader: 'font-awesome-loader' },
-        ]
-      }
+        ],
+      },
     ],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      favicon: path.resolve(__dirname, 'src/public/images/brand-logo.png'),
+      favicon: path.resolve(__dirname, 'src/public/images/favicon/brand-logo.png'),
       template: path.resolve(__dirname, 'src/templates/index.html'),
       filename: 'index.html',
     }),
