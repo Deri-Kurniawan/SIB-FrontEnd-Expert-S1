@@ -3,18 +3,41 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Restaurant Apps Starter Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DZR RESTO APP</title>
 </head>
 
 <body>
-    <h1>Restaurant Apps Starter Project</h1>
-    <p>Hallo coders! Anda berhasil menjalankan starter project.</p>
-    <p>Jangan lupa untuk menggunakan salah satu gambar yang berada pada ./images/heros sebagai background hero elemen
-    </p>
-    <img src="./images/heros/hero-image_1.jpg" width="450" alt="">
-    <img src="./images/heros/hero-image_2.jpg" width="450" alt="">
-    <img src="./images/heros/hero-image_3.jpg" width="450" alt="">
-    <img src="./images/heros/hero-image_4.jpg" width="450" alt="">
+    <header>
+        <h1 class="brand-logo" tabindex="0"><a href="index.html">DZR RESTO</a></h1>
+
+        <button type="button" id="menu-toggle">
+            <i class="icon fas fa-bars fa-fw"></i>
+        </button>
+
+        <nav>
+            <ul class="nav-menu">
+                <li class="menu-item"><a href="index.html">Home</a></li>
+                <li class="menu-item"><a href="#">Favorite</a></li>
+                <li class="menu-item"><a href="https://github.com/deri-kurniawan" target="_blank">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero" style="background: url(./images/heros/hero-image_2.jpg)">
+            <h1 class="hero-title" tabindex="0">DZR RESTO</h1>
+            <p class="hero-description" tabindex="0">Explore Your Favorite Restaurant</p>
+        </div>
+
+        <h1 class="section-title" tabindex="0">Explore Restaurant</h1>
+
+        <div class="restaurant-list"></div>
+    </main>
+
+    <footer>
+        <p>&copy; Copyright 2021 - <strong>DZR RESTO</strong></p>
+    </footer>
 </body>
 
 </html>

@@ -1,0 +1,59 @@
+@media only screen and (max-width: 550px) {
+
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .brand-logo {
+        width: 100%;
+        margin-left: .5em;
+    }
+
+    .nav-menu {
+        display: none;
+        width: 15em;
+        padding: 0;
+        text-align: center;
+        flex-direction: column;
+
+    }
+
+    .nav-menu .menu-item {
+        padding: 1em;
+        font-size: 1.3em;
+    }
+
+    #menu-toggle {
+        visibility: visible;
+    }
+}
+
+@media screen and (min-width: 550px) {
+    .nav-menu {
+        display: flex !important;
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 780px) {
+    .restaurant-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .restaurant-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .hero,
+    main {
+        margin: auto;
+        min-width: 1000px;
+        max-width: 1200px;
+    }
+}
